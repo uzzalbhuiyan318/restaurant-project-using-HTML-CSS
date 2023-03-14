@@ -1,0 +1,525 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    max-width: 90%;
+    margin: auto;
+
+    /* font-family: 'Handlee', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+}
+
+.row{
+    width: 100%;
+}
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+/* header start here */
+header{
+    background-color: rgb(7, 158, 158);
+    padding: 0% 1%;
+    text-align: center;
+}
+
+.logo{
+    height: 80px ;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul li a{
+    display: block;
+    line-height: 50px;
+    background-color: rgba(1, 105, 105, 0.657);
+    text-decoration: none;
+    color: white;
+
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: .9;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover{
+    opacity: 1;
+    background-color: rgba(2, 130, 130, 0.657);
+}
+
+/* header ends here */
+
+/* Banner start here */
+
+#banner-section{
+    background-image: url("images/banner-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.banner-contents{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.banner-contents h1{
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 0, 0.884);
+    width: 100%;
+    padding: 10px;
+    margin: 15px auto;
+    font-size: 3rem;
+    border-radius: 5px;
+    font-family: 'Handlee', cursive;
+
+}
+
+
+.banner-contents p{
+    width: 300px;
+    color: white;
+    padding: 20px ;
+    margin: 15px auto;
+    background-color: rgba(0,128,0);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: 'Handlee', cursive;
+    text-align: center;
+}
+
+.btn{
+    width: 160px;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color:rgba(0,128,0) ;
+    transition: .4s;
+    color: white;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+/* About Us section start here */
+.about-us-section{
+    padding: 1% 7%;
+    margin: 10px auto;
+}
+.about-desc{
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.about-desc h1{
+    padding: 10px;
+
+}
+
+
+/* About us section ends here */
+
+
+/* Food menu section start here */
+
+#food-menu-id{
+    
+    margin: 10px auto;
+}
+
+.card-body{
+    text-align: center;
+    transition: .4s;
+}
+
+.popular-items{
+    text-align: center;
+    margin: 25px 0;
+    
+}
+
+.popular-items h3{
+    display: inline;
+    text-align: center;
+    font-size: 2rem;
+    background-color: gray;
+    padding: 10px 85px;
+    color: white;
+    
+    
+}
+
+.card-body img{
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+.item-description{
+    background-color: rgb(128, 125, 125);
+}
+.item-name{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.item-description > p{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 3px;
+}
+.card-body:hover{
+    transform: scale(1.1);
+}
+/* Food menu section ends here */
+
+/* Contact section start here */
+#contact-id{
+    background-color: rgb(7, 158, 158);
+    color: white;
+    text-align: center;
+
+}
+.maps{
+    width: 100%;
+    height: 250px;
+}
+.contact-details .solid-hr{
+    border: 2px solid white;
+    border-bottom: none;
+    margin: 5px auto;
+    width: 70px;
+}
+
+/* footer start here */
+footer{
+    background-color: rgb(3, 3, 124);
+}
+footer p{
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.9rem;
+    color: white;
+}
+.icons{
+    text-align: center;
+
+}
+.icon-style{
+    color: white;
+    width: 32px;
+    height: 32px;
+    line-height: 20px;
+    margin: 0px 5px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    transition: .4s;
+}
+
+.icon-style:hover{
+    transform: scale(1.2);
+    background-color: rgb(28, 27, 27);
+}
+
+/* footer ends here */
+
+
+
+
+/* Contact section ends here */
+
+@media only screen and (min-width: 576px) {
+
+    /* For small screen: */
+    .col-sm-1 {
+        width: 8.33%;
+    }
+
+    .col-sm-2 {
+        width: 16.66%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        width: 33.33%;
+    }
+
+    .col-sm-5 {
+        width: 41.66%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.33%;
+    }
+
+    .col-sm-8 {
+        width: 66.66%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        width: 83.33%;
+    }
+
+    .col-sm-11 {
+        width: 91.66%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    /* For medium screen: */
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+    /* For large screen: */
+header .logo-div{
+    text-align: left;
+}
+nav ul{
+    text-align: right;
+    
+}
+nav ul li{
+    display: inline-block;
+   
+}
+nav ul li a{
+   display: inline-block;
+   background-color: transparent;
+   opacity: .8;
+   cursor: pointer;
+   transition: .4s;
+   font-size: 1.2rem;
+}
+nav ul li a:hover{
+    background-color: transparent;
+    opacity: 1;
+    transform: scale(1.2);
+ }
+/* Banner starts */
+#banner-section{
+    position: relative;
+    height: 100vh;
+}
+.banner-contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner-contents h1{
+    width: 900px;
+    font-size: 3.5rem;
+    padding: 10px 0px;
+}
+.banner-contents p{
+    width: 700px;
+    font-size: 2rem;
+}
+
+/* Banner ends */
+
+/* about us start here */
+
+#contact-us-id{
+    margin: 20px 0px;
+}
+.about-desc h1{
+    font-size: 3rem;
+}
+/* about us start here */
+
+/* cards start here */
+.popular-items{
+    text-align: center;
+}
+.popular-items h3{
+    border-radius: 10px;
+}
+/* cards ends here */
+
+/* contact start here */
+#contact-id{
+    padding: 20px;
+}
+
+/* contact ends here */
+
+
+
+/* footer start here */
+footer{
+    padding: 30px;
+}
+footer p{
+    text-align: left;
+    opacity: .5;
+    font-size: 1rem;
+}
+
+.icons{
+    text-align: right;
+}
+
+
+/* footer ends here */
+
+    .col-lg-1 {
+        width: 8.33%;
+    }
+
+    .col-lg-2 {
+        width: 16.66%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.33%;
+    }
+
+    .col-lg-11 {
+        width: 91.66%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}
